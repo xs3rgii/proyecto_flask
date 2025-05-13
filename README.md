@@ -1,13 +1,39 @@
 # Proyecto Flask
-Proyecto de HTML y CSS usando flask para convertirlo en una pagina dinamica
+Proyecto de HTML y CSS usando Flask para convertirlo en una página dinámica.
 
 ## Objetivo
-Crear una aplicacion web usando flask con el fin de tener un formulario que el usuario
-va a consultar informacion almacenada en un fichero json
+Crear una aplicación web usando Flask con el fin de tener un formulario que el usuario pueda usar para consultar información almacenada en un fichero JSON.
 
-### Uso del proyecto:
-Para poder usar el proyecto hay que activar un entorno virtual, para ello hay que seguir estos pasos:
-1. python -m venv "proyecto flask"
-2. source "proyecto flask/bin/activate"
-3. pip install flask
-4. pip freeze > "proyecto flask/requirements.txt"
+## Uso del proyecto:
+Para poder usar el proyecto, hay que activar un entorno virtual. Para ello, sigue estos pasos:
+
+1. Crea un entorno virtual:
+    ```bash
+    python -m venv "proyecto flask"
+    ```
+
+2. Activa el entorno virtual:
+    - En macOS/Linux:
+      ```bash
+      source "proyecto flask/bin/activate"
+      ```
+    - En Windows:
+      ```bash
+      "proyecto flask\Scripts\activate"
+      ```
+
+3. Instala Flask:
+    ```bash
+    pip install flask
+    ```
+
+4. Guarda las dependencias en el archivo `requirements.txt`:
+    ```bash
+    pip freeze > "proyecto flask/requirements.txt"
+    ```
+
+## Imagen del Proyecto
+A continuación, se muestra una imagen del proceso:
+
+![Pasos](https://raw.githubusercontent.com/xs3rgii/proyecto_flask/main/static/imagenes/pasos.png)
+
