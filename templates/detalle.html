@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Detalle del Componente - PC Truco{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <h2>Detalle del Componente</h2>
+    {% if xxx %}
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ xxx.detalles.marca|default('Desconocido') }} {{ xxx.detalles.modelo|default('Modelo no especificado') }}</h5>
+                <p class="card-text">Categoría: {{ xxx.categoria|default('Sin categoría') }}</p>
+                <p class="card-text">Precio: {{ xxx.detalles.precio|default('No disponible') }} €</p>
+                {% if xxx.detalles.especificaciones %}
+                    <p class="card-text"><strong>Especificaciones:</strong></p>
+                    <ul>
+                        {% for key, value in xxx.detalles.especificaciones.items() %}
+                            <li>{{ key }}: {{ value }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+                {% if xxx.disponibilidad %}
+                    <p class="card-text">Proveedor: {{ xxx.disponibilidad.proveedor|default('No especificado') }}</p>
+                    <p class="card-text">Stock: {{ xxx.disponibilidad.stock|default('No disponible') }}</p>
+                {% endif %}
+                {% if xxx.detalles.compatibilidad %}
+                    <p class="card-text"><strong>Compatibilidad:</strong></p>
+                    <ul>
+                        {% for item in xxx.detalles.compatibilidad %}
+                            <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <a href="{{ url_for('listar_xxxs') }}" class="btn btn-secondary">Volver a la Lista de Componentes</a>
+        </div>
+    {% else %}
+        <p>Componente no encontrado.</p>
+    {% endif %}
+</div>
+{% endblock %}

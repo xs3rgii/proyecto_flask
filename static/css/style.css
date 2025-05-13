@@ -9826,20 +9826,28 @@ h6 {
   list-style-type: none;
 }
 
-.zoom-img {
-  transition: transform 0.1s ease;
+
+img.zoom-img {
+  transition: transform 0.20Sí, tiene mucho sentido que el archivo app.py y la plantilla Jinja2 que compartiste trabajen juntos:s ease-in-out;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  display: inline-block;
+  width: 100%; 
+  max-width: 600px; 
 }
 
-.zoom-img:hover {
+img.zoom-img:hover {
   transform: scale(1.1);
 }
 
+
+
 html, body {
-  height: 100%; /* Asegura que html y body ocupen el 100% de la altura de la ventana */
+  height: 100%;
 }
 
 body {
-  margin: 0; /* Elimina el margen predeterminado del body */
+  margin: 0;
   display: flex;
   flex-direction: column;
 }
