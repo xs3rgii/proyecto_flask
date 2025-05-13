@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}Formulario de Búsqueda - PC Truco{% endblock %}
+
+{% block content %}
+<div class="container my-5 text-center">
+    <h2>Formulario de búsqueda</h2>
+    <p>Aquí encontrarás los componentes necesarios para armar tu ordenador</p>
+</div>
+<div class="row justify-content-center">
+    <div class="col-12 col-sm-8 mb-5">
+        <div class="contact-form" style="padding: 2rem; border: 1px solid #ccc; border-radius: 5px;">
+            <div id="success"></div>
+            <form method="POST" action="{{ url_for('formulario') }}" name="searchForm" id="searchForm" novalidate="novalidate">
+                <div class="control-group" style="margin-bottom: 1rem;">
+                    <label for="model_select">Seleccionar Modelo:</label>
+                    <select class="form-control p-4" id="model_select" name="model_select">
+                        <option value="">Todos los modelos</option>
+                        {% if all_models %}
+                            {% for model in all_models %}
+                                <option value="{{ model }}">{{ model }}</option>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                </div>
+                <div class="control-group" style="margin-bottom: 1rem;">
+                    <label for="query">Buscar por texto (Marca, Categoría, etc.):</label>
+                    <input type="text" class="form-control p-4" id="query" name="query" placeholder="Buscar componente..." data-validation-required-message="Por favor, introduce un término de búsqueda" />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div style="text-align: right;">
+                    <button class="btn btn-primary py-3 px-5" type="submit" id="searchButton">Buscar</button>
+                </div>
+            </form>
+            <div id="searchResults" style="margin-top: 2rem;">
+                {% if resultados %}
+                    <h2>Resultados de la búsqueda:</h2>
+                    {% if resultados|length > 0 %}
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            {% for componente in resultados %}
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{ componente.marca|default('Desconocido') }} {{ componente.modelo|default('Modelo no especificado') }}</h5>
+                                            <p class="card-text">Categoría: {{ componente.categoria|default('Sin categoría') }}</p>
+                                            <p class="card-text">Precio: {{ componente.precio|default('No disponible') }} €</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <p>No se encontraron componentes con ese criterio.</p>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>{% block title %}Base{% endblock %}</title>
+    <title>{% block title %}PCTruco - Tecnología y Trucos{% endblock %}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="PCTruco, tu sitio de información tecnológica.">
+    <meta name="keywords" content="PC, tecnología, tutoriales, trucos, informática">
+    <meta name="author" content="Sergio Roales Garcia">
 
     <!-- Favicon -->
     <link href="{{ url_for('static', filename='img/favicon.ico') }}" rel="icon">
@@ -27,12 +30,15 @@
 </head>
 
 <body>
+    <!-- Header Start -->
     <header>
         <div class="container-fluid">
-            <div class="row py-3 px-lg-5">
+            <div class="row py-3 px-lg-5 align-items-center">
                 <div class="col-lg-4">
                     <a class="navbar-brand d-none d-lg-block">
-                        <h1 class="m-0 display-5 text-capitalize"><span class="text-primary">PC</span>Truco</h1>
+                        <h1 class="m-0 display-5 text-capitalize">
+                            <span class="text-primary">PC</span>Truco
+                        </h1>
                     </a>
                 </div>
             </div>
@@ -44,9 +50,10 @@
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
-                    <div class="navbar-nav mr-auto py-0">
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav">
                         <a href="{{ url_for('index') }}" class="nav-item nav-link">Inicio</a>
+                        <a href="{{ url_for('formulario') }}" class="nav-item nav-link">Formulario</a>
                     </div>
                 </div>
             </nav>
@@ -54,11 +61,13 @@
         <!-- Navbar End -->
     </header>
 
+    <!-- Main Content Start -->
     <main>
         {% block content %}
         <!-- Aquí va el contenido específico de cada página -->
         {% endblock %}
     </main>
+    <!-- Main Content End -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-md-5">
@@ -67,6 +76,20 @@
                 <p class="m-0 text-white">
                     &copy; PC Truco. Todos los derechos reservados. Diseñado por Sergio Roales Garcia
                 </p>
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+                <a class="text-white px-2" href="https://facebook.com">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="text-white px-2" href="https://twitter.com">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="text-white px-2" href="https://instagram.com">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="text-white px-2" href="mailto:contacto@pctrucos.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
         </div>
     </div>
