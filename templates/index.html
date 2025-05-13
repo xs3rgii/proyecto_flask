@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio - PC Truco{% endblock %}
+
+{% block content %}
+<div class="container my-5 text-center">
+    <h2>🚀 Bienvenido a PC Truco</h2>
+    <p class="lead">Encuentra los mejores componentes para tu PC haciendo clic en la imagen del simpático perrito. 🐶</p>
+    
+    <a href="#">
+        <img src="{{ url_for('static', filename='img/1.png') }}" 
+             alt="Perrito simpático guía de PC" 
+             class="zoom-img rounded shadow-sm" 
+             style="width: 300px;">
+    </a>
+</div>
+{% endblock %}

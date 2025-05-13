@@ -1,0 +1,197 @@
+{
+  "componentes": [
+    {
+      "id": 1,
+      "categoria": "Procesador",
+      "detalles": {
+        "marca": "Intel",
+        "modelo": "Core i7-12700K",
+        "precio": 350.99,
+        "especificaciones": {
+          "frecuencia": "3.8 GHz",
+          "nucleos": 12,
+          "hilos": 20,
+          "cache": "25MB"
+        },
+        "disponibilidad": {
+          "stock": 10,
+          "proveedor": "Proveedor A"
+        },
+        "compatibilidad": ["LGA 1700", "DDR4", "DDR5"]
+      }
+    },
+    {
+      "id": 2,
+      "categoria": "Procesador",
+      "detalles": {
+        "marca": "AMD",
+        "modelo": "Ryzen 7 5800X",
+        "precio": 299.99,
+        "especificaciones": {
+          "frecuencia": "3.8 GHz",
+          "nucleos": 8,
+          "hilos": 16,
+          "cache": "32MB"
+        },
+        "disponibilidad": {
+          "stock": 8,
+          "proveedor": "Proveedor B"
+        },
+        "compatibilidad": ["AM4", "DDR4"]
+      }
+    },
+    {
+      "id": 3,
+      "categoria": "Procesador",
+      "detalles": {
+        "marca": "Intel",
+        "modelo": "Core i9-13900K",
+        "precio": 599.99,
+        "especificaciones": {
+          "frecuencia": "3.0 GHz",
+          "nucleos": 24,
+          "hilos": 32,
+          "cache": "36MB"
+        },
+        "disponibilidad": {
+          "stock": 5,
+          "proveedor": "Proveedor C"
+        },
+        "compatibilidad": ["LGA 1700", "DDR5"]
+      }
+    },
+    {
+      "id": 4,
+      "categoria": "Tarjeta Gráfica",
+      "detalles": {
+        "marca": "NVIDIA",
+        "modelo": "RTX 4070",
+        "precio": 599.99,
+        "especificaciones": {
+          "memoria": "12GB GDDR6X",
+          "frecuencia": "1.92 GHz",
+          "consumo": "250W"
+        },
+        "disponibilidad": {
+          "stock": 5,
+          "proveedor": "Proveedor C"
+        },
+        "compatibilidad": ["PCIe 4.0", "DirectX 12", "Ray Tracing"]
+      }
+    },
+    {
+      "id": 5,
+      "categoria": "Tarjeta Gráfica",
+      "detalles": {
+        "marca": "AMD",
+        "modelo": "RX 6800 XT",
+        "precio": 649.99,
+        "especificaciones": {
+          "memoria": "16GB GDDR6",
+          "frecuencia": "2.1 GHz",
+          "consumo": "300W"
+        },
+        "disponibilidad": {
+          "stock": 4,
+          "proveedor": "Proveedor D"
+        },
+        "compatibilidad": ["PCIe 4.0", "DirectX 12", "AMD FidelityFX"]
+      }
+    },
+    {
+      "id": 6,
+      "categoria": "Tarjeta Gráfica",
+      "detalles": {
+        "marca": "NVIDIA",
+        "modelo": "RTX 3060 Ti",
+        "precio": 399.99,
+        "especificaciones": {
+          "memoria": "8GB GDDR6",
+          "frecuencia": "1.67 GHz",
+          "consumo": "200W"
+        },
+        "disponibilidad": {
+          "stock": 6,
+          "proveedor": "Proveedor E"
+        },
+        "compatibilidad": ["PCIe 4.0", "DirectX 12", "DLSS"]
+      }
+    },
+    {
+      "id": 7,
+      "categoria": "Placa Base",
+      "detalles": {
+        "marca": "ASUS",
+        "modelo": "ROG STRIX Z690-E",
+        "precio": 299.99,
+        "especificaciones": {
+          "socket": "LGA 1700",
+          "memoria_max": "128GB",
+          "factor_forma": "ATX"
+        },
+        "disponibilidad": {
+          "stock": 7,
+          "proveedor": "Proveedor F"
+        },
+        "compatibilidad": ["LGA 1700", "DDR4", "DDR5"]
+      }
+    },
+    {
+      "id": 8,
+      "categoria": "Placa Base",
+      "detalles": {
+        "marca": "MSI",
+        "modelo": "MAG B550M",
+        "precio": 139.99,
+        "especificaciones": {
+          "socket": "AM4",
+          "memoria_max": "64GB",
+          "factor_forma": "Micro ATX"
+        },
+        "disponibilidad": {
+          "stock": 10,
+          "proveedor": "Proveedor G"
+        },
+        "compatibilidad": ["AM4", "DDR4"]
+      }
+    },
+    {
+      "id": 9,
+      "categoria": "Memoria RAM",
+      "detalles": {
+        "marca": "Corsair",
+        "modelo": "Vengeance LPX 16GB",
+        "precio": 79.99,
+        "especificaciones": {
+          "tipo": "DDR4",
+          "capacidad": "16GB",
+          "velocidad": "3200 MHz"
+        },
+        "disponibilidad": {
+          "stock": 15,
+          "proveedor": "Proveedor H"
+        },
+        "compatibilidad": ["DDR4"]
+      }
+    },
+    {
+      "id": 10,
+      "categoria": "Memoria RAM",
+      "detalles": {
+        "marca": "G.Skill",
+        "modelo": "Ripjaws V 32GB",
+        "precio": 149.99,
+        "especificaciones": {
+          "tipo": "DDR4",
+          "capacidad": "32GB",
+          "velocidad": "3600 MHz"
+        },
+        "disponibilidad": {
+          "stock": 12,
+          "proveedor": "Proveedor I"
+        },
+        "compatibilidad": ["DDR4"]
+      }
+    }
+  ]
+}
