@@ -22,12 +22,8 @@ Para poder usar el proyecto en Debian, hay que activar un entorno virtual. Para 
     pip install flask
     ```
 
-4. Guarda las dependencias en el archivo `requirements.txt`:
+4. Instalar las dependencias desde el archivo `requirements.txt`:
+    Si tienes el archivo `requirements.txt` en tu proyecto, puedes instalar todas las dependencias necesarias ejecutando:
     ```bash
-    pip freeze > "proyecto flask/requirements.txt"
+    pip install -r requirements.txt
     ```
-
-## Imagen del proceso de utilizacion del entorno virtual
-A continuación, se muestra una imagen del proceso:
-
-![Pasos](https://raw.githubusercontent.com/xs3rgii/proyecto_flask/main/imagenes/pasos.png)
