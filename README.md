@@ -1,4 +1,4 @@
-# proyecto_flask
+# Proyecto Flask
 Proyecto de HTML y CSS usando flask para convertirlo en una pagina dinamica
 
 ## Objetivo
