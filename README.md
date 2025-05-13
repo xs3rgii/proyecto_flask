@@ -27,7 +27,7 @@ Para poder usar el proyecto en Debian, hay que activar un entorno virtual. Para 
     pip freeze > "proyecto flask/requirements.txt"
     ```
 
-## Imagen del Proyecto
+## Imagen del proceso de utilizacion del entorno virtual
 A continuación, se muestra una imagen del proceso:
 
 ![Pasos](https://raw.githubusercontent.com/xs3rgii/proyecto_flask/main/imagenes/pasos.png)
