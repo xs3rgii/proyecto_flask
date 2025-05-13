@@ -18,7 +18,7 @@ Para poder usar el proyecto en Debian, hay que activar un entorno virtual. Para 
     ```
 
 3. Instalar las dependencias desde el archivo `requirements.txt`:
-    Si tienes el archivo `requirements.txt` en tu proyecto, puedes instalar todas las dependencias necesarias ejecutando:
+    Si tienes el archivo `requirements.txt` en tu proyecto:
     ```bash
     pip install -r requirements.txt
     ```
