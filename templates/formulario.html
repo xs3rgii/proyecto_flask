@@ -15,17 +15,17 @@
                 <div class="control-group" style="margin-bottom: 1rem;">
                     <label for="model_select">Seleccionar Modelo:</label>
                     <select class="form-control p-4" id="model_select" name="model_select">
-                        <option value="">Todos los modelos</option>
+                        <option value="" {% if selected_model == '' %}selected{% endif %}>Todos los modelos</option>
                         {% if all_models %}
                             {% for model in all_models %}
-                                <option value="{{ model }}">{{ model }}</option>
+                                <option value="{{ model }}" {% if selected_model == model %}selected{% endif %}>{{ model }}</option>
                             {% endfor %}
                         {% endif %}
                     </select>
                 </div>
                 <div class="control-group" style="margin-bottom: 1rem;">
                     <label for="query">Buscar por texto (Marca, Categoría, etc.):</label>
-                    <input type="text" class="form-control p-4" id="query" name="query" placeholder="Buscar componente..." data-validation-required-message="Por favor, introduce un término de búsqueda" />
+                    <input type="text" class="form-control p-4" id="query" name="query" placeholder="Buscar componente..." data-validation-required-message="Por favor, introduce un término de búsqueda" value="{{ query }}"/>
                     <p class="help-block text-danger"></p>
                 </div>
                 <div style="text-align: right;">
